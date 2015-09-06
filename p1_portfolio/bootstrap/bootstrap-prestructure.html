@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-responsive title-logo" src="images/logo.png" alt="Udacity logo">
+                </div>
+                <div class="col-md-6 text-right text-uppercase">
+                    <h1 class="title-super text-thin">Ting Li</h1>
+                    <h4>Front-end Ninja</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="images/puppy-main.jpg" class="img-responsive" alt="Main image">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-muted text-thick">Featured Work</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="images/puppy-1.jpg" data-toggle="modal" data-target="#project1" class="img-responsive" alt="Appify puppy">
+                    <h3 class="text-uppercase text-thick">Appify</h3>
+                    <p><a href="http://github.com">https://github.com/udacity/appify</a></p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/puppy-2.jpg" data-toggle="modal" data-target="#project2" class="img-responsive" alt="Sunflower puppy">
+                    <h3 class="text-uppercase text-thick">Sunflower</h3>
+                    <p><a href="http://github.com">https://github.com/udacity/sunflower</a></p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/puppy-3.jpg" data-toggle="modal" data-target="#project3" class="img-responsive" alt="Bokeh puppy">
+                    <h3 class="text-uppercase text-thick">Bokeh</h3>
+                    <p><a href="http://github.com">https://github.com/udacity/bokeh</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-uppercase text-center" id="myModalLabel1">Ampify</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive center-block" src="images/puppy-1.jpg" alt="Ampify puppy">
+                        <p>This was a placeholder for my first project. I learned a lot about HTML and CSS.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-uppercase text-center" id="myModalLabel2">Sunflower</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive center-block" src="images/puppy-2.jpg" alt="Sunflower puppy">
+                        <p>This was a placeholder for my second project. I learned a lot about HTML and CSS.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-uppercase text-center" id="myModalLabel3">Bokeh</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive center-block" src="images/puppy-3.jpg" alt="Bokeh puppy">
+                        <p>This was a placeholder for my third project in this class. I learned a lot about HTML and CSS.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

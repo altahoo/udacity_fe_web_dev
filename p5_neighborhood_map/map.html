@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>OpenTable Reservations</title>
+    <meta name="generator" content="Bootply">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Layout template refers to: http://www.bootstrapzero.com/bootstrap-template/google-maps -->
+    <div class="navbar navbar-custom navbar-fixed-top">
+      <div class="navbar-header"><a class="navbar-brand" href="http://www.opentable.com/">OpenTable</a>
+        <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <form class="navbar-form" data-bind="submit: search">
+          <div class="form-group" style="display:inline;">
+            <div class="input-group">
+              <input type="text" class="form-control" data-bind="value: query" placeholder="Search researvation ...">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span> </span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="map-canvas"></div>
+      <div class="container-fluid" id="main">
+        <div class="row">
+          <div class="col-xs-4" id="left">  
+            <!-- item list -->
+            <div id="result-list">
+              <ul data-bind="foreach: {data: filteredRestaurantList, as: 'restaurant'}" id="restaurant-list">
+                <li data-bind="click: $root.selectRestaurant" class="restaurant-info">
+                  <span class="restaurant-name" data-bind="text: restaurant.name"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        <div class="col-xs-8"><!--map-canvas will be postioned here--></div> 
+      </div>
+    </div>
+    <!-- Template ends -->
+    <!-- script references -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwF8g3sC4xiwmDMtLO-fj9JqwI3x9rCe4&libraries=places"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
